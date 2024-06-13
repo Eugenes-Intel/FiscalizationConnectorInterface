@@ -7,7 +7,7 @@
     {
         public char Drive { get; set; }
 
-        public string DeviceId { get; set; }
+        public ushort DeviceId { get; set; }
 
         public string ActivationKey { get; set; }
     }

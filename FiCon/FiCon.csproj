@@ -1,38 +1,38 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-	  <PackageId>Rootsware.Fiscalization.Integration.FCI.Core</PackageId>
-	  <Version>1.0.0</Version>
-	  <Authors>Rootsware</Authors>
-	  <Product>FiscalizationConnectorInterface</Product>
-	  <Title>FDMS Fiscalization Integration Interface</Title>
-	  <Description>Facilitates integration of fiscalization between an accounting service and FDMS. This package is one-directional.. </Description>
-	  <Copyright>The package is open source to edit, modify and enhancement.</Copyright>
-	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
-	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-	  <PackageProjectUrl>https://github.com/Eugenes-Intel/FiscalizationConnectorInterface.git</PackageProjectUrl>
-	  <PackageReadmeFile>README.md</PackageReadmeFile>
-	  <RepositoryUrl>$(PackageProjectUrl)</RepositoryUrl>
-	  <RepositoryType>git</RepositoryType>
-	  <PackageTags>Fiscalization Fiscalisation Intergration Communication FDMS ZIMRA</PackageTags>
-	  <PackageReleaseNotes>This is the initial release</PackageReleaseNotes>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageId>Rootsware.Fiscalization.Integration.FCI.Core</PackageId>
+		<Version>1.0.2</Version>
+		<Authors>Rootsware</Authors>
+		<Product>FiscalizationConnectorInterface</Product>
+		<Title>FDMS Fiscalization Integration Interface</Title>
+		<Description>Facilitates integration of fiscalization between an accounting service and FDMS. This package is one-directional.. </Description>
+		<Copyright>2024</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<PackageProjectUrl>https://github.com/Eugenes-Intel/FiscalizationConnectorInterface.git</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>$(PackageProjectUrl)</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageTags>Fiscalization Fiscalisation Intergration Communication FDMS ZIMRA</PackageTags>
+		<PackageReleaseNotes>This is the initial release</PackageReleaseNotes>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="13.0.1" />
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.3" />
-    <PackageReference Include="Rootsware.Integration.SocketClient.Core" Version="1.0.1" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="13.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.3" />
+		<PackageReference Include="Rootsware.Integration.SocketClient.Core" Version="1.0.1" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Update="README.md">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<None Update="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
 </Project>
