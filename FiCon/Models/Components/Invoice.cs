@@ -6,6 +6,8 @@
 
         public string Currency { get; set; }
 
+        public string Country { get; set; }
+
         public string BranchName { get; set; }
 
         public string InvoiceNumber { get; set; }

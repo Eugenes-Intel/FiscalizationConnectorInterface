@@ -3,8 +3,8 @@ using FiCon.Models.Global;
 using FiCon.Models.Shared;
 using SocketCL.Constants;
 using SocketCL.Models;
-using SocketClient.Constants;
 using SocketClient;
+using SocketClient.Constants;
 
 
 namespace FiCon.Services
@@ -14,6 +14,8 @@ namespace FiCon.Services
     /// </summary>
     internal abstract class ACI
     {
+        private static SemaphoreSlim _semaphore = new(1, 1);
+
         protected readonly ISocketClient _socketClient;
 
         protected ACI(ISocketClient socketClient) => _socketClient = socketClient;
@@ -22,9 +24,11 @@ namespace FiCon.Services
         {
             try
             {
+                _semaphore.Wait();
+
                 var response = await _socketClient.GetAsync(message, socket, sbit);
 
-                await _socketClient.ReleaseAsync();
+                //_socketClient.Shutdown();
 
                 if (response is not null && response.Body is not null && response.Body.Contents is not null)
                 {
@@ -37,6 +41,8 @@ namespace FiCon.Services
             catch (ObjectDisposedException) { return new RequestResponse<TResponse>() { IsSuccess = false, Message = Rscn.SCE05 }; }
 
             catch (Exception ex) { return new RequestResponse<TResponse>() { IsSuccess = false, Message = ex.Message }; }
+
+            finally { _semaphore.Release(); /*_socketClient.Close();*/ }
         }
     }
 }

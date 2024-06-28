@@ -6,7 +6,7 @@
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageId>Rootsware.Fiscalization.Integration.FCI.Core</PackageId>
-		<Version>1.0.2</Version>
+		<Version>2.1.4</Version>
 		<Authors>Rootsware</Authors>
 		<Product>FiscalizationConnectorInterface</Product>
 		<Title>FDMS Fiscalization Integration Interface</Title>
@@ -20,12 +20,15 @@
 		<RepositoryType>git</RepositoryType>
 		<PackageTags>Fiscalization Fiscalisation Intergration Communication FDMS ZIMRA</PackageTags>
 		<PackageReleaseNotes>This is the initial release</PackageReleaseNotes>
+		<DebugType>none</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+		<AllowedReferenceRelatedFileExtensions>*.pdb</AllowedReferenceRelatedFileExtensions>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="AutoMapper" Version="13.0.1" />
-		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.3" />
-		<PackageReference Include="Rootsware.Integration.SocketClient.Core" Version="1.0.1" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.6" />
+		<PackageReference Include="Rootsware.Integration.SocketClient.Core" Version="1.2.0" />
 	</ItemGroup>
 
 	<ItemGroup>

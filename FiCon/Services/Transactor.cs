@@ -5,6 +5,7 @@ using SocketCL.Constants;
 using SocketCL.Enums;
 using SocketCL.Models;
 using SocketClient;
+using System.Collections.Concurrent;
 using System.Text;
 using System.Text.Json;
 
