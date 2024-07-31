@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiscalizationConnectorInterface", "FiscalizationConnectorInterface\FiscalizationConnectorInterface.csproj", "{46E8A9C1-286C-4C62-9066-383A71961A52}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FiCon", "FiCon\FiCon.csproj", "{193AF76C-4095-400B-80A2-CFB4432509BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rootsware.Fiscalization.Integration.FCI", "Rootsware.Fiscalization.Integration.FCI\Rootsware.Fiscalization.Integration.FCI.csproj", "{193AF76C-4095-400B-80A2-CFB4432509BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
